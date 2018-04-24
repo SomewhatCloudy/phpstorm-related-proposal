@@ -2,9 +2,12 @@
 
 When working on most modern development frameworks based upon the MVC design pattern it is common to have to work on files in groups.
 
-Modern Javascript frameworks, such as Ember, Vue, Angular, etc. will often have multiple files in different places but for the same component. For example you may have a Controller, Template, Model and Stylesheet all forming once component.
+Modern Javascript frameworks, such as Ember, Vue, Angular, etc. will often have multiple files in different places but for the same component. For example you may have a Controller, Template, Model, Test and Stylesheet all forming one component.
 
-There are two main usability issues that arise from this situation. The first is that it is difficult to find and open all of the component files, requiring a hunt around the filesystem. The other issue is that the tab bar becomes crowded very quickly.
+There are two main usability issues that arise from this situation:
+
+ * It is difficult to find and open all of the component files, requiring a hunt around the filesystem. 
+ * The tab bar becomes crowded very quickly with no obvious visual association between related files.
 
  ## Proposal - Tab Groups
  
@@ -22,6 +25,8 @@ As a further proposal to the initial, I would also suggest:
  * Adding in a futher meta tag, `@idea.title: Group Title Here` which would replace the filename at the top with the specified title.
  * Allow the viewing and searching of these groups in the symbols (⌘ + ⌥ + O) menu.
  * Adding a side panel, similar to Structure, which contains discovered groups.
+ 
+ See the image below for a before/after example of the change:
  
  ![Layout sample](layout-sample.png)
  
